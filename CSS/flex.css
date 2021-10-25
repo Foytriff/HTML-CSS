@@ -3,3 +3,12 @@
 }
 
 .flex-grow { flex-grow: 1; }
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
