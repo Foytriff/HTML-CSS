@@ -1,0 +1,38 @@
+.format-logo {
+    height: 100%;
+    width: 100%;
+}
+
+.logo-container {
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+section {
+    width: 100%;
+    border: red solid 5px;
+}
+
+.section-img {
+    background-image: url(/images/bild2621.PNG);
+    height: 100%;
+    border: red solid 5px;
+}
+
+section:nth-of-type(3) {
+    height: 20vw;
+} 
+
+/*
+.section-div {
+    width: 100%;
+}
+
+.section-img {
+    width: 100vw;
+    height: 80vw;
+    background-image: url(images/bild2621.PNG);
+   
+}
+*/

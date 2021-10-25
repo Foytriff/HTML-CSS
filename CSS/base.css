@@ -57,11 +57,9 @@
 
     --border-radius-sm: .25rem;
     --border-success: .2rem solid var(--color-succes);
-    --border-transparent: .1rem solid var(--color-transparent);
-
-
-    
+    --border-transparent: .1rem solid var(--color-transparent);    
 }
+
 
 * {
     padding: 0;
@@ -90,6 +88,13 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 700;}
 .ht, h1 {font-size: var(--distance-13);}
 
+
+/*MARGINS*/
+.m-6 {margin: 0 var(--distance-6);}
+.mt-4 {margin-top: var(--distance-4);}
+.mb- {margin-bottom: var(--distance-4);}
+.ml- {margin-left: var(--distance-4);}
+.mr- {margin-right: var(--distance-4);}
 
 /*background colors*/
 .bg-primary, .btn-primary {background-color:var(--color-primary);}
