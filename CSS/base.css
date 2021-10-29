@@ -37,4 +37,10 @@
 .pt-4 { padding-top: var(--distance-9); }
 .pt-5 { padding-top: var(--distance-12); }
 
+.p { height: 5rem;
+    background-color: var(--dark-transp);
+    border: 1px solid white;
+    padding: 0 3rem 0;
+}
+
 .lr-padd { padding: 0 var(--distance-5) 0; }
