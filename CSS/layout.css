@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+}
+
+section > div {
+    max-width: 0px;
+    min-width: 0px;
+}
+
+.welcome-tag {
+    position: 50% 50%;
+}

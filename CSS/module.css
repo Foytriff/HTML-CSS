@@ -1,0 +1,25 @@
+.slideshow {
+    
+    background-image: url(/images/proffeee.png);
+    background-size: 100vw 100vh;
+    background-position: cover;
+    
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.nav-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-sections:not(:first-child){
+    padding-left: 1rem;
+}
