@@ -6,6 +6,6 @@
 }
 
 .nav-button div{
-    background-color: white;
+    background-color: var(--white);
     height: 2px;
 }
