@@ -1,7 +1,12 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
 }
 
 section {
@@ -12,11 +17,42 @@ section {
     border: 2px solid red;
 }
 
-section > div {
-    max-width: 0px;
+/* section > div {
+    max-width: 100%;
     min-width: 0px;
 }
-
+ */
 .welcome-tag {
-    position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 200%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: .75rem;
+    border: 1px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.welcome-tag > div {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1100;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
+}
+
+.welcome-tag span {
+    color: orange;
+}
+
+.welcome-tag > p {
+    font-family: Kanit;
+    margin-top: 1rem;
 }

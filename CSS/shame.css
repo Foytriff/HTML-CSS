@@ -1,0 +1,11 @@
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+}
+
+.nav-button div{
+    background-color: white;
+    height: 2px;
+}

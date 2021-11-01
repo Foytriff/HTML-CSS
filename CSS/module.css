@@ -1,25 +1,68 @@
-.slideshow {
+
+/* Slideshow */
+.homepage {
     
-    background-image: url(/images/proffeee.png);
+   /*  background-image: url(/images/proffeee.png);
     background-size: 100vw 100vh;
-    background-position: cover;
+    background-position: cover; */
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
     
 }
 
+.slideshow__imageContainter {
+    display: flex;
+    height: 100%;
+    width: 400vw;
+    position: absolute;
+    border: 1px solid chartreuse;
+    z-index: -1;
+}
+
+.slideshow__image {
+    width: 25%;
+    height: 100%;
+}
+
+
+
+
+/* Navigation */
 .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid white;
     background: rgba(0, 0, 0, 0.15);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .nav-sections {
     display: flex;
+    width: 45%;
     justify-content: space-between;
+    font-size: 1.7rem;
+    
+}
+
+.nav-sections div:hover {
+    color: orange;
 }
 
 .nav-sections:not(:first-child){
     padding-left: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo > span {
+    color: orange;
 }
