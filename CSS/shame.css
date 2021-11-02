@@ -9,3 +9,42 @@
     background-color: var(--white);
     height: 2px;
 }
+
+.guide-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guide-container h1 {
+    text-transform: uppercase;
+}
+
+.guide-container h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.guide-container div span {
+    color: orange;
+}
+
+.guide-container > :not(:first-child){
+    margin-left: 10px;
+}
+
+.flex-c:first-child {
+    line-height: 120%;
+}
+
+
+
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}

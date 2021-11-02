@@ -1,4 +1,3 @@
-
 /* Slideshow */
 .homepage {
     
@@ -10,7 +9,6 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    
 }
 
 .slideshow__imageContainter {
@@ -97,6 +95,34 @@
     border-radius: 50%;
     transform: translate(3px, -3px);
 }
+
+/*Guides*/
+.guides-section {
+    display: block;
+    height: 100%;
+    background-color: rgb(44, 43, 43);
+    padding: 1rem 30% 1rem 30%;
+}
+
+.guide-container {
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Kanit;
+    color: var(--white);
+}
+
+
+
+.guide-circle {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
 /* .circle {
     background: rgba(0, 0, 1, 0.15);
     padding: .75rem;
@@ -104,3 +130,88 @@
     border: 2px solid orange;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.637);
 } */
+
+footer {
+    display:flex;
+    width:100%;
+    background-color: black;
+    padding:1rem 0 1rem 0;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.loc-section {
+    background-color: var(--white);
+    padding: .5rem 0 4rem 0;
+}
+
+.our-locations-div {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit', cursive;
+    color: var(--light-gray);
+    
+}
+.our-locations-div h1 {
+    padding: 0px 1rem;
+    text-align:center;
+    white-space: nowrap;
+}
+
+.flex-r {
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.our-locations-div p {
+    font-size: .75rem;
+}
+
+.line{
+    height: 1px;
+    background-color: var(--light-gray);;
+    width:100%;
+}
+
+
+/* .loc-section:nth-child(2) {
+    align-items: center;
+} */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    max-width: 85vw;
+    border: 5px solid yellow;
+    justify-content: center;
+}
+
+.loc-card {
+    margin: 1rem;
+    height: 24rem;
+    width: 17.5rem;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.card__image {
+    max-width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.loc-card__image-container {
+    height: 45%;
+    overflow: hidden;
+    position: relative;
+}
+
+
