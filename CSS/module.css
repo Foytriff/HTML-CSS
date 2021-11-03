@@ -134,7 +134,7 @@
 footer {
     display:flex;
     width:100%;
-    background-color: black;
+   /*  background-image: url(/images/waves-6002682_1280.jpg); */
     padding:1rem 0 1rem 0;
     align-items: center;
     justify-content:center;
@@ -142,17 +142,38 @@ footer {
 }
 
 .loc-section {
-    background-color: var(--white);
-    padding: .5rem 0 4rem 0;
+    position: relative;
+}
+
+.loc-section::before {
+    content: '';
+    background-image: url(/images/waves-6002682_1280.jpg);
+    background-size: cover;
+    opacity: .65;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    z-index: -1;
+}
+
+.loc-section-background {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
 }
 
 .our-locations-div {
-    padding: 1rem;
+    padding: .5rem .5rem 1rem .5rem;
+    margin: 1rem 1rem 0rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Kanit', cursive;
-    color: var(--light-gray);
+    color: goldenrod;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
     
 }
 .our-locations-div h1 {
@@ -168,50 +189,198 @@ footer {
     justify-content: space-between;
 }
 
+.flex-r h1{
+    text-transform: uppercase;
+}
+
 .our-locations-div p {
     font-size: .75rem;
 }
 
 .line{
     height: 1px;
-    background-color: var(--light-gray);;
+    background-color: gold;
     width:100%;
 }
-
-
-/* .loc-section:nth-child(2) {
-    align-items: center;
-} */
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-bottom: 5rem;
     height: 100%;
     width: 100%;
     max-width: 85vw;
-    border: 5px solid yellow;
     justify-content: center;
 }
 
 .loc-card {
     margin: 1rem;
-    height: 24rem;
+    height: 20rem;
     width: 17.5rem;
     overflow: hidden;
-    border: 1px solid red;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.363);
+    border-radius: .15rem;
+    background-color: var(--white);
+    border: 1px solid var(--white);
 }
 
 .card__image {
-    max-width: 100%;
-    /* height: 100%; */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .loc-card__image-container {
-    height: 45%;
-    overflow: hidden;
-    position: relative;
+    height: 55%;
+/*     overflow: hidden;
+ */    position: relative;
 }
 
+.card-emblem {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: orange;
+    /* box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, 0.329); */
+    padding: 0.5rem;
+    border-radius: 100%;
+    border:1px solid white;
+    box-shadow: 0px 1px 10px 1px white;
+    color: var(--white);
+    font-family: Kanit;
+    font-weight: bold;
+}
 
+.card-rating{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    background-color: rgba(0, 0, 0, 0.199);
+    padding: .25rem;
+    border-radius: 4px;
+}
+.rating-stars {
+    display: flex;
+    /* height: 5px;
+    width: 5px; */
+}
+
+.card-rating p {
+    font-family: kanit;
+    padding-top: 2%;
+    font-size: .5rem;
+    color: var(--white);
+}
+
+.fa-star{
+    color: gold;
+}
+
+.card-info {
+    height: 45%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: left;
+    color:var(--light-gray);
+    font-family: Kanit;
+}
+
+.card-info h1{
+    color: rgb(75, 72, 72);
+    padding: 5% 5% 0 5%;
+    text-transform: uppercase;
+}
+
+.card-info p {
+    font-size: .8rem;
+    padding-left: 1rem;
+}
+
+.price-tag {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+
+.price-tag h2{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 2px;
+    border-radius: 4px;
+    font-size: .9rem;
+    line-height: .5rem;
+}
+
+.price-tag h3 {
+    color: orange;
+    border: 1px solid goldenrod;
+    line-height: 100%;
+    margin: 0;
+}
+
+.buy-button {
+    font-family: Bebas Neue;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding: 1px 5px;
+    background-color: var(--white);
+    border: 1px solid grey;
+    border-radius: 4px;
+    color: var(--light-gray);
+    box-shadow: inset 0 0 0 0 orange;
+    position: absolute;
+    right: 2%;
+    bottom: 4%;
+    transition: ease-out 0.3s;
+}
+
+.buy-button:hover {
+    font-weight: bold;
+    box-shadow: inset 200px 0 0 0 orange;
+    cursor: pointer;
+    color: var(--white);
+}
+
+/*statistics*/
+
+.statistics-section{
+    flex-direction: row;
+    align-items: center;
+    padding: 9rem 12.5%;
+    background-image: url(/images/akke_guiden.jpg);
+    justify-content: space-between;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-icon {
+    font-size: 3rem;
+    color: var(--white);
+    margin: 0 auto;
+}
+
+.fa-map-marked-alt {
+    background-color: rgba(255, 166, 0, 0.7);
+    padding: 1.3rem;
+    border-radius: 50%;
+}
+
+.stat-card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: kanit;
+    color: var(--white);
+    max-width: 10rem;
+}
+
+.stat-card__info h1 {
+    font-size: 3rem;
+    line-height: 120%;
+}
