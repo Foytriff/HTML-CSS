@@ -351,6 +351,7 @@ footer {
     padding: 9rem 12.5%;
     background-image: url(/images/akke_guiden.jpg);
     justify-content: space-between;
+    border: 0px 2rem solid var(--white);
 }
 
 .stat-card {
@@ -384,3 +385,142 @@ footer {
     font-size: 3rem;
     line-height: 120%;
 }
+
+/* destinations */
+
+.dest-section{
+    position: relative; 
+}
+.dest-section::before {
+    content: '';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(/images/skyimg.webp);
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.flex-r2 {
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.line2{
+    height: 2px;
+    background-color: yellow;
+    width:100%;
+}
+
+.our-locations-div2 {
+    padding: .5rem .5rem 1rem .5rem;
+    margin: 1rem 1rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit', cursive;
+    color: lightblue;
+    background-color: rgba(255, 220, 106, 0.7);
+    border-radius: 4px;
+    
+}
+
+.our-locations-div2 h1 {
+    padding: 0px 1rem;
+    text-align:center;
+    white-space: nowrap;
+}
+
+.flex-r2 h1{
+    text-transform: uppercase;
+}
+
+.our-locations-div2 p {
+    font-size: .75rem;
+}
+
+.button-tray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(173, 216, 230, 0.664);
+    margin: 1rem auto;
+    background-color: rgba(255, 255, 255, 0.75);;
+    padding: 6px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 1px rgba(173, 216, 230, 0.664);
+}
+
+.button-tray > :not(:first-child) {
+    margin-left: .7rem;
+}
+
+.tray-button {
+    font-family: kanit;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 1px 5px;
+    background-color: white;
+    border: 2px solid lightblue;
+    border-radius: 4px;
+    color: var(--light-gray);
+    box-shadow: inset 0 0 0 0 rgb(124, 188, 209);
+    right: 2%;
+    bottom: 4%;
+    transition: ease-out 0.3s;
+}
+
+.tray-button:hover {
+    font-weight: bold;
+    box-shadow: inset 200px 0 0 0 rgb(124, 188, 209);
+    cursor: pointer;
+    color: var(--white);
+}
+
+.dest-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    height: 100%;
+    width: 100%;
+    max-width: 85vw;
+    justify-content: center;
+}
+
+.dest-img-container {
+    position: relative;
+    margin: 1rem;
+    width: 25%;
+    min-width: 15rem;
+    max-width: 10rem;
+    height: 12.5rem;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.507);
+    border-radius: 4px;
+}
+
+.dest-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.dest-info {
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.315);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Bebas Neue;
+    font-stretch: wider;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
