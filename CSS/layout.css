@@ -16,6 +16,22 @@ section {
     /* height: 100vh; */
 }
 
+
+@media all and (max-width: 850px) {
+    .nav-sections {
+        position: absolute;
+        width: 100vw;
+        bottom: 5%;
+        margin: 10.5rem 25vw 0rem 25vw;
+    }
+
+    .nav-sections > * {
+        padding-left: 1rem;
+    }
+}
+
+
+
 /* section > div {
     max-width: 100%;
     min-width: 0px;

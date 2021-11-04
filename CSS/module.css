@@ -32,6 +32,7 @@
 /* Navigation */
 .navigation {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
@@ -59,6 +60,8 @@
 }
 
 .logo {
+    color:var(--white);
+    font-family: Bebas Neue;
     font-size: 2rem;
 }
 
@@ -106,14 +109,19 @@
 
 .guide-container {
     display: flex;
+    flex-wrap: wrap;
     margin: 0px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-family: Kanit;
     color: var(--white);
+    margin: auto 4px;
 }
 
-
+.guide-flex-r {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .guide-circle {
     height: 4.5rem;
@@ -134,7 +142,6 @@
 footer {
     display:flex;
     width:100%;
-   /*  background-image: url(/images/waves-6002682_1280.jpg); */
     padding:1rem 0 1rem 0;
     align-items: center;
     justify-content:center;
@@ -348,15 +355,22 @@ footer {
 .statistics-section{
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     padding: 9rem 12.5%;
     background-image: url(/images/akke_guiden.jpg);
+    background-size: cover;
     justify-content: space-between;
     border: 0px 2rem solid var(--white);
+}
+
+.statistics-section/*  > :not(:first-child )*/{
+    margin-left: 1rem;
 }
 
 .stat-card {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .stat-icon {
@@ -383,7 +397,13 @@ footer {
 
 .stat-card__info h1 {
     font-size: 3rem;
+    padding-top: 1rem;
     line-height: 120%;
+}
+
+.stat-card__info p {
+    max-width: 80%;
+    text-align: center;
 }
 
 /* destinations */
@@ -413,7 +433,7 @@ footer {
 
 .line2{
     height: 2px;
-    background-color: yellow;
+    background-color: rgba(243, 202, 125, 0.849);
     width:100%;
 }
 
@@ -425,7 +445,8 @@ footer {
     align-items: center;
     font-family: 'Kanit', cursive;
     color: lightblue;
-    background-color: rgba(255, 220, 106, 0.7);
+    font-weight: 15000;
+    background-color: rgba(250, 199, 246, 0.473);
     border-radius: 4px;
     
 }
@@ -438,10 +459,12 @@ footer {
 
 .flex-r2 h1{
     text-transform: uppercase;
+    text-shadow: 1px 1px 5px black;
 }
 
 .our-locations-div2 p {
     font-size: .75rem;
+    text-shadow: 1px 1px 3px black;
 }
 
 .button-tray {
@@ -524,3 +547,82 @@ footer {
     text-align: center;
 }
 
+/* footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:rgb(58, 58, 58);
+    font-family: kanit;
+}
+
+footer > div {
+    margin-left: 1rem;
+    min-width: 10rem;/* !!!!!!!! */
+    padding: 1rem;
+}
+
+.footer-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 20%;
+    color: rgb(145, 145, 145);
+}
+
+.footer-div h1 {
+    color:var(--white);
+}
+
+.footer-div h2 {
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 1;
+    font-weight: lighter;
+}
+
+.footer-div p {
+    color: rgb(145, 145, 145);
+    font-size: .95rem;
+}
+
+.footer-gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-img {
+    width: 33%;
+    max-height: 6rem;
+    padding: .2rem;
+}
+
+.footer-icon > * {
+    padding-right: 1rem;
+    padding-top: .7rem;
+}
+
+.footer-button-tray {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.footer-button-tray > * {
+    display: flex;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border: 1px solid orange;
+    padding: .5rem;
+    color: rgb(145, 145, 145);
+}
+
+footer a:hover {
+    background-color: orange;
+    color: var(--white);
+}
