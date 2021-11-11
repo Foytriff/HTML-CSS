@@ -17,16 +17,24 @@ section {
 }
 
 
-@media all and (max-width: 850px) {
+@media all and (max-width: 730px) {
     .nav-sections {
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        width: 100vw;
-        bottom: 5%;
-        margin: 10.5rem 25vw 0rem 25vw;
+        /* left: auto;
+        right: auto; */
+        right: 1rem;
+        bottom: 2%;
+        right: 2%;
+        font-size: 1rem;
+        /* transform: translate(-50%, -50%); */
+        margin-top: 20rem;
+        width: 7.5rem !important;
     }
 
-    .nav-sections > * {
-        padding-left: 1rem;
+    .navigation {
+        padding-bottom: 10rem !important;
     }
 }
 
